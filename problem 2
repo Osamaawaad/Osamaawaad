@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+class Employee {
+    public :
+string name;
+int namber;
+
+};
+class problem2{
+public :
+bool Namesize(string name){
+if(name.size()<=5){
+    cout<<"this is name size < 5"<<endl;
+    return false;
+
+}else {
+return true;
+}
+}
+bool nambersize(int namber){
+if(namber <=0){
+    cout<<"this is namber < 0"<<endl;
+    return false;
+}else{
+return true;
+}
+
+}
+};
+int main(){
+problem2 p2;
+Employee e;
+e.name="Osama 1";
+e.namber=1;
+if(p2.Namesize(e.name) &&p2.nambersize(e.namber)){
+
+    cout<<e.name<<"  -  "<<e.namber<<endl;
+}
+
+
+
+
+}
