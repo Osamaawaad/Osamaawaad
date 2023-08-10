@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+class presot{
+    public :
+        int id;
+string name;
+double age;
+};
+int main()
+{
+  presot p ;
+   cout<<"enter your Id : "<<endl;
+     cin>>p.id;
+  cout<<"enter your Name : "<<endl;
+     cin>>p.name;
+   cout<<"enter your Age : "<<endl;
+   cin>>p.age;
+   cout<<p.id<<"  "<<p.name<<"   "<<p.age<<endl;
+}
