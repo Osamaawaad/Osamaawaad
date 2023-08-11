@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int user1,user2,gcd;
+    cin>>user1>>user2;
+    int maxe,mine;
+    if(user1>=user2)
+    {
+        maxe=user1;
+        mine=user2;
+    }
+    else
+    {
+        maxe=user2;
+        mine=user1;
+    }
+    for(int i=1; i<=maxe; i++)
+    {
+        if(user1%i==0&&user2%i==0)
+        {
+            gcd=i;
+        }
+    }
+    cout<<gcd<<endl;
+}
