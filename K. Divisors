@@ -1,0 +1,18 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+   int user ;
+   cin>>user;
+   for(int i=1;i<=user;i++){
+ 
+         if(user%i==0){
+            cout<<i<<endl;
+         }else{
+         continue;
+         }
+}
+ 
+}
