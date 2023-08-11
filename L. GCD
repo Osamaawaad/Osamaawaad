@@ -17,7 +17,7 @@ int main()
         maxe=user2;
         mine=user1;
     }
-    for(int i=1; i<=maxe; i++)
+    for(int i=1; i<=maxe; i++) || mine
     {
         if(user1%i==0&&user2%i==0)
         {
