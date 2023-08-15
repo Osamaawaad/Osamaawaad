@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c ;
+    int t,d;
+    cin>>t;
+    while(t--)
+    {
+        cin>>a>>b>>c;
+        int counter;
+
+        if(c%2==1)
+        {
+            a+=c/2+1;
+            b+=c/2;
+        }
+        else if(c%2==0)
+        {
+            a+=c/2;
+            b+=c/2;
+        }
+        if(a<=b)
+        {
+            cout<<"Second"<<endl;
+        }
+        else if(a>b)
+        {
+            cout<<"First"<<endl;
+        }
+
+
+
+
+
+    }
+
+
+
+
+}
