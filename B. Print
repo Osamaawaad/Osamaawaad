@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+class loop
+{
+public :
+    int t;
+    void setloops(int t)
+    {
+        for(int i=1; i<t;i++)
+
+        {
+
+            cout<<i<<" ";
+        }
+        cout<<t;
+
+    }
+
+};
+
+int main()
+{
+    loop p;
+    cin>>p.t;
+    p.setloops(p.t);
+}
