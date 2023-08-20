@@ -1,0 +1,20 @@
+#include <iostream>
+ 
+using namespace std;
+class swapv{
+ 
+public :
+     int num1,num2;
+void  swape(int num1,int num2){
+int box=num2;
+num1=num2;
+num2=box;
+}
+};
+int main()
+{
+    swapv sw;
+cin>>sw.num1>>sw.num2;
+swap(sw.num1,sw.num2);
+cout<<sw.num1<<" "<<sw.num2<<endl;
+}
