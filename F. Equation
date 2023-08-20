@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+ 
+using namespace std;
+class swapv{
+ 
+public :
+     int x,num1;
+long long   swape(int x,int num1){
+    long long res=0;
+    for(int n=2;n<=num1;n+=2){
+     res+=(pow(x,n));
+ 
+    }
+    return res;
+}
+ 
+ 
+};
+int main(){
+    swapv sw;
+    cin>>sw.x>>sw.num1;
+   cout<<sw.swape(sw.x,sw.num1)<<endl;
+    }
+ 
+ 
+ 
+ 
