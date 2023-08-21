@@ -1,0 +1,38 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    long long  n,m;
+    long long  sum=0;
+    long long  sum2=0;
+    while(cin>>n>>m){
+        if(n<=0||m<=0){
+            return 0;
+            }
+        if(n<=m){
+            for(int i=n; i<=m; i++){
+ 
+                cout<<i<<" ";
+                sum=sum+i;
+            }
+            cout<<"sum ="<<sum<<endl;
+            sum=0;
+        }
+        else if(m<=n){
+            for(int i=m; i<=n; i++){
+ 
+                cout<<i<<" ";
+                sum2=sum2+i;
+ 
+            }
+            cout<<"sum ="<<sum2<<endl;
+            sum2=0;
+ 
+        }
+    }
+}
+ 
+ 
+ 
