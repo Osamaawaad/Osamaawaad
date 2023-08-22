@@ -1,0 +1,22 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+int fun(int a){
+{
+    if(a==0){
+        return 1;
+    }else{
+    return 7+fun(a-2);
+    }
+
+}
+
+
+}
+int main()
+{
+  cout<<fun(10)<<endl;
+
+
+//Run 36
+}
