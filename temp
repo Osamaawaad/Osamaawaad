@@ -1,0 +1,15 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+  int a=5;
+  int b=10;
+  int temp;
+  temp=b;
+  b=a;
+  a=temp;
+  cout<<a<<" "<<b<<endl;
+cout<<<<endl;
+}
