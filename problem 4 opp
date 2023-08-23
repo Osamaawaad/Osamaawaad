@@ -1,0 +1,77 @@
+#include <iostream>
+
+using namespace std;
+class player{
+private :
+    int id;
+    string name;
+    int number;
+    public :
+    void setid(int id){
+    this->id=id;
+    }
+   void setName(string name){
+   this->name=name;
+   }
+   void setNumber(int Number){
+   this->number=Number;
+   }
+   int getId(){
+   return this->id;
+   }
+   string getName(){
+    return this->name;
+   }
+   int getnumber(){
+   return this->number;
+   }
+};
+
+
+
+class Student{
+private :
+    int id;
+    string name;
+    int age;
+    public :
+    void setid(int id){
+    this->id=id;
+    }
+   void setName(string name){
+   this->name=name;
+   }
+   void setage(int age){
+   this->age=age;
+   }
+   int getId(){
+   return this->id;
+   }
+   string getName(){
+    return this->name;
+   }
+   int getage(){
+   return this->age;
+   }
+};
+
+
+
+
+
+int main()
+{
+player pl;
+pl.setid(1);
+pl.setName("osama");
+pl.setNumber(123);
+cout<<pl.getId()<<"-"<<pl.getName()<<"-"<<pl.getnumber()<<endl;
+cout<<endl;
+Student st;
+st.setid(2);
+st.setName("top osama");
+st.setage(111);
+cout<<st.getId()<<"-"<<st.getName()<<"-"<<st.getage()<<endl;
+
+
+}
