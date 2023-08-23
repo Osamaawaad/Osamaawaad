@@ -1,0 +1,146 @@
+#include <iostream>
+
+using namespace std;
+class Emoloyee{
+private :
+    int id;
+    string name;
+    string number ;
+    public :
+        /*
+          void setid(int id){
+    if(id>0){
+            this->id=id;
+
+    }else{
+    cout<<"Invailid Id"<<endl;
+    }
+    }
+    */
+     void setId(int id){
+            this->id=id;
+    }
+   void setName(string name){
+   this->name=name;
+   }
+  /* void setage(string  number){
+   if(number.size()<=2){
+   this->number=number;
+
+    }else{
+    cout<<"Invailid Id"<<endl;
+   }
+   }
+*/
+      void setnumber(string  number){
+      this->number=number;
+      }
+
+   int getId(){
+   return this->id;
+   }
+   string getName(){
+    return this->name;
+   }
+   string getnumber(){
+   return this->number;
+   }
+
+};
+class Master {
+private :
+    int id;
+    string name;
+    double age;
+public :
+    /*
+        void setid(int id){
+    if(id>0){
+            this->id=id;
+
+    }else{
+    cout<<"Invailid Id"<<endl;
+    }
+    }
+    */
+     void setid(int id){
+            this->id=id;
+    }
+
+ void setName(string name){
+   this->name=name;
+   }
+   /*
+   void setage(int age){
+ if(id>0){
+            this->age=age;
+
+    }else{
+    cout<<"Invailid Id"<<endl;
+    }
+   }
+   */
+   void setage(double age){
+    this->age=age;
+   }
+    int getId(){
+    return this->id;
+    }
+     string getname(){
+    return this->name;
+    }
+     int getage(){
+    return this->age;
+    }
+    };
+class date {
+public :
+bool dateId(int id){
+if(id>=0){
+    return true;
+}else{
+cout<<"Invailid Id"<<endl;
+return false;
+}
+}
+bool datenumber(string number){
+if(number.size()<=2){
+    return true;
+}else{
+cout<<"Invailid number"<<endl;
+return false;
+}
+}
+bool dateage(double age){
+if(age>7&&age<30){
+    return true;
+}else{
+cout<<"Invailid age"<<endl;
+return false;
+}
+}
+};
+int main()
+{
+date d;
+
+Emoloyee e;
+e.setId(1);
+bool v1=d.dateId(e.getId());
+e.setName("osama");
+e.setnumber("hr");
+bool v2=d.datenumber(e.getnumber());
+if(v1&&v2){
+    cout<<e.getId()<<"-"<<e.getName()<<"-"<<e.getnumber()<<endl;
+}
+Master m;
+m.setid(1);
+bool v3=d.dateId(m.getId());
+m.setName("pr");
+m.setage(5);
+bool v4=d.datenumber(m.getname());
+if(v3&&v4){
+                cout<<m.getId()<<"-"<<m.getname()<<"-"<<m.getage()<<endl;
+
+}
+}
