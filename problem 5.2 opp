@@ -1,0 +1,109 @@
+#include<iostream>
+using namespace std;
+class person{
+    private :
+int id;
+string name;
+public :
+void setId(int id){
+this->id=id;
+}
+void setName(string name){
+this->name=name;
+}
+int getId(){
+return this->id;
+}
+string getName(){
+return this->name;
+}
+};
+
+
+class player{
+private :
+    int id;
+    string name;
+    int number;
+     string phone;
+    public :
+    void setid(int id){
+    this->id=id;
+    }
+    void setPhone(string phone){
+    this->phone=phone;
+    }
+   void setName(string name){
+   this->name=name;
+   }
+   void setNumber(int Number){
+   this->number=Number;
+   }
+   int getId(){
+   return this->id;
+   }
+   string getName(){
+    return this->name;
+   }
+   int getnumber(){
+   return this->number;
+   }
+   string getPhone(){
+   return this->phone;
+   }
+};
+
+
+
+class Student{
+private :
+    int id;
+    string name;
+    int age;
+    string phone ;
+    public :
+    void setid(int id){
+    this->id=id;
+    }
+   void setName(string name){
+   this->name=name;
+   }
+   void setage(int age){
+   this->age=age;
+   }
+    void setPhone(string phone){
+    this->phone=phone;
+    }
+   int getId(){
+   return this->id;
+   }
+   string getName(){
+    return this->name;
+   }
+   int getage(){
+   return this->age;
+   }
+      string getPhone(){
+   return this->phone;
+   }
+};
+int main(){
+	person p;
+	p.setId(1);
+	p.setName("programmingOsama");
+	player pl;
+	pl.setid(2);
+	pl.setName("hr Osama");
+	pl.setNumber(11);
+	pl.setPhone("01090586843");
+	Student s;
+	s.setid(3);
+	s.setName("soft osama");
+	s.setage(16);
+	s.setPhone("01556238385");
+	cout<<p.getId()<<"-"<<p.getName()<<endl;
+    cout<<pl.getId()<<"-"<<pl.getName()<<"-"<<pl.getnumber()<<"-"<<pl.getPhone()<<endl;
+	cout<<s.getId()<<"-"<<s.getName()<<"-"<<s.getage()<<"-"<<s.getPhone()<<endl;
+
+
+}
