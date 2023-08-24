@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+class share{
+    public :
+int id;
+string name;
+};
+class privateschool: public share {
+    public :
+
+};
+class publicschool: public share{
+public :
+};
+int main()
+{
+privateschool p;
+p.id=1;
+p.name="MICA";
+publicschool pu;
+pu.id=2;
+pu.name="Mocrosoft";
+cout<<p.id<<"-"<<p.name<<endl;
+cout<<pu.id<<"-"<<pu.name<<endl;
+}
