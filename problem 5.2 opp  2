@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+/*
+Please Create App that accept
+Person(id,name)
+Player(id , name, number,phone)
+student (id,name,age,phone) with oop
+*/
+class sharedate{
+public :
+    int id ;
+    string name;
+
+};
+class sharedateph{
+    public :
+string phone;
+};
+class person :public sharedate{
+public :
+
+};
+class player:public sharedate,public sharedateph{
+public :
+    string number;
+};
+class Student :public sharedate,public sharedateph{
+public :
+    int age;
+};
+
+int main(){
+person p;
+p.id=1;
+p.name="osama";
+player pl;
+pl.id=2;
+pl.name="Ahamad";
+pl.number="111";
+pl.phone="01090586843";
+Student s;
+s.id=3;
+s.name="Mehamed";
+s.age=16;
+s.phone="01556238385";
+cout<<p.id<<"-"<<p.name<<endl;
+cout<<pl.id<<"-"<<pl.name<<"-"<<pl.number<<"-"<<pl.phone<<endl;
+cout<<s.id<<"-"<<s.name<<"-"<<s.age<<"-"<<s.phone<<endl;
+
+}
