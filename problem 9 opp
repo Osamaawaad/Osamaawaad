@@ -1,0 +1,78 @@
+#include<iostream>
+using namespace std;
+class BaseEntity {
+ public :
+     int id;
+     string name;
+     void setId(int id){
+     this->id=id;
+     }
+      void setName(string name){
+     this->name=name;
+     }
+     int getId(){
+     return id;
+     }
+     string getName(){
+     return name;
+     }
+};
+class publicclup:public BaseEntity{
+public :
+      int codeing ;
+    void setpublicclup(int codeing){
+    this->codeing=codeing;
+    }
+    int getpublicclup(){
+    return codeing;
+    }
+};
+class privateclup:public BaseEntity{
+public :
+      int codeing ;
+    void setpeivateclup(int codeing){
+    this->codeing=codeing;
+    }
+    int getprivateclup(){
+    return codeing;
+    }
+};
+class PlayerPublicClubService{
+    virtual void playerpublicclup(publicclup pu)=0;
+};
+class PlayerPrivateClubService{
+    virtual void playerprivateclup(privateclup pr)=0;
+};
+class publicclupservic:public PlayerPublicClubService{
+    public :
+void playerpublicclup(publicclup pu){
+cout<<"ID : "<<pu.getId()<<"  Name : "<<pu.getName()<<"  codeint : "<<pu.getpublicclup()<<endl;
+cout<<"public clup player save succing"<<endl;
+}
+};
+class privateclupservic:public PlayerPrivateClubService{
+    public :
+void playerprivateclup(privateclup pr){
+cout<<"ID : "<<pr.getId()<<"  Name : "<<pr.getName()<<"   codeint : "<<pr.getprivateclup()<<endl;
+cout<<"private clup player save succing"<<endl;
+}
+
+};
+
+int main(){
+publicclup pue;
+pue.setId(24);
+pue.setName("osama");
+pue.setpublicclup(252);
+publicclupservic pur;
+pur.playerpublicclup(pue);
+privateclup pe;
+cout<<endl;
+cout<<endl;
+privateclup pre;
+pre.setId(2);
+pre.setName("osama top 1");
+pre.setpeivateclup(2512);
+privateclupservic pr;
+pr.playerprivateclup(pre);
+}
