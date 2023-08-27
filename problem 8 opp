@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+class BaseEntity{
+    public :
+    int id;
+    string text;
+    string image;
+};
+class appservic{
+    public :
+virtual void printin(BaseEntity be)=0;
+};
+class AppCommenService{
+public :
+    void print(BaseEntity be){
+    cout<<"ID : "<<be.id<<"text : "<<be.text<<"Image : "<<be.image<<endl;
+    }
+};
+class facebook :public BaseEntity,appservic,AppCommenService{
+    public :
+void printin(BaseEntity be){
+cout<<"facebook"<<endl;
+this->print(be);
+}
+};
+class LinkedIn :public BaseEntity,appservic,AppCommenService{
+    public :
+void printin(BaseEntity be){
+cout<<"LinkedIn "<<endl;
+this->print(be);
+}
+};
+int main(){
+	BaseEntity be;
+	cin>>be.id;
+	be.text = "I am Facebook ";
+	be.image = "i am Facebook Image ";
+    facebook fa;
+	fa.printin(be);
+	cin>>be.id;
+	be.text = "I am LinkedIn";
+	be.image = "i am LinkedIn Image";
+	LinkedIn ln;
+	ln.printin(be);
+}
