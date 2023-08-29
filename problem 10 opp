@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+class student{
+    public :
+int id;
+string name;
+};
+class schoolservic{
+    public:
+virtual student addstudent(student stu)=0;
+virtual student showstudent(student stu)=0;
+};
+class servicdate:schoolservic{
+    public :
+student addstudent(student stu){
+return stu;
+}
+student showstudent(student stu){
+return stu;
+}
+};
+class addstudent1:public servicdate{
+public :
+student addstudent(student stu){
+cout<<"ID : "<<stu.id<<"  "<<"Name : "<<stu.name<<endl;
+ return stu;
+}
+};
+class showstudent2:public servicdate{
+public :
+student showstudent(student stu){
+cout<<"ID : "<<stu.id<<"  "<<"Name : "<<stu.name<<endl;
+ return stu;
+}
+};
+int main(){
+student s;
+cin>>s.id;
+cin>>s.name;
+addstudent1 s1;
+s1.addstudent(s);
+cin>>s.id;
+cin>>s.name;
+showstudent2 s2;
+s2.showstudent(s);
+}
