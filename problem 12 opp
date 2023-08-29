@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class facbook
+{
+private :
+    int id;
+    string text;
+    string image;
+public :
+    void appfacbook(int id,string text,string image)
+    {
+        this->id=id;
+        this->text=text;
+        this->image=image;
+    }
+    int getId()
+    {
+        return id;
+    }
+    string getText()
+    {
+        return text;
+    }
+    string getImage()
+    {
+        return image;
+    }
+};
+int main()
+{
+    facbook f;
+    f.appfacbook(1,"post","Image");
+    cout<<"ID : "<<f.getId()<<"  Text : "<<f.getText()<<"  Image  :  "<<f.getImage()<<endl;
+}
