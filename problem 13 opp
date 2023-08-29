@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+class Triangle{
+    public:
+    int sides1;
+    int sides2;
+        void area(int sides1,int sides2){
+            this->sides1=sides1;
+            this->sides2=sides2;
+
+        }
+         void perimeter1(int sides1,int sides2){
+            this->sides1=sides1;
+            this->sides2=sides2;
+        }
+         void perimeter2 (int sides1,int sides2){
+            this->sides1=sides1;
+            this->sides2=sides2;
+        }
+        int getarea(){
+        return sides1*sides2;
+        }
+         int getperimeter1(){
+        return 2/1*sides1;
+        }
+          int getperimeter2(){
+        return 2/1*sides2;
+        }
+        };
+int main()
+{
+Triangle t;
+cin>>t.sides1;
+cin>>t.sides2;
+cout<<"area : "<<t.getarea()<<"   perimeter : "<<t.getperimeter1()<<endl;
+cout<<"area : "<<t.getarea()<<"   perimeter : "<<t.getperimeter2()<<endl;
+
+}
