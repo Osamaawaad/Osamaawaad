@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+class EverAge
+{
+private:
+public :
+    int num1,num2,num3;
+    void setnum1(int num1)
+    {
+        this->num1=num1;
+    }
+    void setnum2(int num2)
+    {
+        this->num2=num2;
+    }
+    void setnum3(int num3)
+    {
+        this->num3=num3;
+    }
+    int getnum1()
+    {
+        return num1;
+    }
+    int getnum2()
+    {
+        return num2;
+    }
+    int getnum3()
+    {
+        return num3;
+    }
+
+    int Calculatee()
+    {
+        return (num1+num2+num3)/3;
+    }
+    void Calculate()
+    {
+        cout<<"Num 1  ="<<getnum1()<<"  Num 2  ="<<getnum2()<<"  Num 3  ="<<getnum3()<<endl;
+        cout<<"  sum everage ="<<Calculatee()<<endl;
+    }
+};
+int main()
+{
+    EverAge everage;
+    cin>>everage.num1;
+    cin>>everage.num2;
+    cin>>everage.num3;
+    everage.Calculate();
+}
