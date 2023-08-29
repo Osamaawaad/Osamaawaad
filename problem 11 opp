@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class Restaurant
+{
+public :
+    int id;
+    string order;
+};
+class Restaurantrescri
+{
+public:
+    Restaurant appRestaurant(Restaurant restaurant)
+    {
+        return restaurant;
+    }
+    virtual void showorder()
+    {
+
+
+    };
+};
+int main()
+{
+    Restaurant res;
+    cin>>res.id;
+    cin>>res.order;
+    Restaurantrescri r;
+    cout<<"ID : "<<r.appRestaurant(res).id<<"   Order : "<<r.appRestaurant(res).order<<endl;
+
+
+}
