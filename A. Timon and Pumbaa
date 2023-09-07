@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a,b;
+	cin >> a >> b;
+	int res=0;
+	if (a >= b) {
+		res = a - b;
+		std::cout << res << std::endl;
+	}
+	else if (a <= b) {
+		res = a - b ;
+		res = 0;
+		cout << res << endl;
+	}
+
+
+}
