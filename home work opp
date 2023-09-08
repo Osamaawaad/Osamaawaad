@@ -1,0 +1,60 @@
+#include <iostream>
+
+using namespace std;
+class Customer
+{
+public:
+	string name;
+	string phone;
+	void namee(string name)
+	{
+		cout << "enter your name " << endl;
+		this->name = name;
+	}
+	void phonee(string phone)
+	{
+		cout << "enter your phone " << endl;
+		this->phone = phone;
+	}
+};
+
+class order
+{
+	int sum = 0;
+public:
+	string order;
+	int resorder = 1;
+	void  ordere()
+	{
+		cout << "Note: The order is $2" << endl;
+
+		while (true)
+		{
+
+			if (order != "-1")
+			{
+				cout << "enter your Order " << resorder++ << endl;
+				sum = (resorder - 1) * 2 - 2;
+				cin >> order;
+			}
+			else {
+				cout << "       Date Order \n" << endl;
+				cout << "Sum Order = " << sum << endl;
+				return;
+			}
+		}
+
+	}
+};
+int main()
+{
+	Customer c;
+	c.namee(c.name);
+	cin >> c.name;
+	c.phonee(c.phone);
+	cin >> c.phone;
+	order o;
+	o.ordere();
+	cout << "name :" << c.name << "   phone :  " << c.phone << endl;
+
+}
